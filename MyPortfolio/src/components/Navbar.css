@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071124; /* Deep dark blue background matching your screenshot */
+    padding: 9px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-container-left {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between Name and Menu links */
+}
+.brand-name {
+    color: rgb(220, 217, 217); /* Light blue accent color */
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.brand-name:hover {
+    color: rgb(252, 252, 252);
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Space between each link */
+}
+.nav-links a {
+    color: #d1e4ff; /* Cool grey text color */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #7da0ff; 
+}
+.nav-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    align-items: center;
+}
+.nav-icons a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.nav-icons a:hover {
+    color: #7da0ff; 
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .nav-container-left {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+}

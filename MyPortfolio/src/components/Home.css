@@ -1,0 +1,111 @@
+/* Core Section Container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  min-height: 80vh; 
+  background-color: #030a16;
+  padding: 60px 10%; /* Top padding creates a safety barrier below the navbar */
+  box-sizing: border-box;
+}
+
+/* Flexbox Layout to force left and right side placement */
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px; /* Gap between the text and the photo */
+}
+
+/* Left Content Area */
+.hero-content {
+  flex: 1.2; /* Takes slightly more space for text readability */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-title {
+  color: #ccd6f6;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.highlight-name {
+  color: #64ffda;
+}
+
+.hero-description {
+  color: #8892b0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Call To Action Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  border: 1px solid #64ffda;
+  background-color: transparent;
+  color: #64ffda;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Right Side Image Box */
+.hero-image-container {
+  flex: 0.7; /* Keeps the photo section balanced */
+  display: flex;
+  justify-content: flex-end;
+  align-items: top;
+}
+
+.hero-profile-pic {
+  width: 280px; 
+  height: 280px; 
+  object-fit: cover;
+  border-radius: 24px; /* Smooth rounded corners matching your screenshot */
+  border: 2px solid #64ffda;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Responsive view for phones/tablets */
+@media (max-width: 900px) {
+  .hero-container {
+    padding-top: 100px; /* Added spacing for mobile navigation header */
+  }
+
+  .hero-layout {
+    flex-direction: column-reverse; /* Stacks image on top, text on bottom on mobile */
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+}
