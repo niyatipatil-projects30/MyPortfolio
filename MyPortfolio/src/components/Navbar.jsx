@@ -1,7 +1,6 @@
 import React from 'react';
 import './Navbar.css';
 import { FaRegEnvelope, FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 export function Navbar(){
 
