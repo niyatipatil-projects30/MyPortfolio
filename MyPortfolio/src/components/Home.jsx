@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelope } from 'react-icons/fa';
 import './Home.css';
-import myPhoto from '../assets/niyati.jpg';
+import myPhoto from '../assets/niyati.jpeg';
 export function Home() {
   return (
     <section className="hero-container" id="home">
